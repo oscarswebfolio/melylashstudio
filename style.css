@@ -129,6 +129,112 @@ header .header__button:focus {
   outline: none;
 }
 
+/*! Main */
+main {
+  border-top: 11px solid black;
+}
+
+main .business {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+main .business .business__images {
+  margin-left: 50px;
+}
+
+main .business .business__images .business__photo {
+  width: 250px;
+  margin-top: 30px;
+}
+
+main .business .business__info {
+  width: 550px;
+  margin: auto;
+  margin-top: 0px;
+}
+
+main .business .business__info .business__title {
+  font-size: 70px;
+  font-family: "Dancing Script", sans-serif;
+}
+
+main .business .business__info .business__text {
+  font-size: 22px;
+}
+
+main .business .business__info .business__graphic {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+main .main__info {
+  width: 950px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+main .carousel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+main .carousel .carousel__images {
+  width: 300px;
+  height: 300px;
+}
+
+main .carousel .ci1 {
+  background: url("ci1.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .carousel .ci2 {
+  background: url("ci2.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .carousel .ci3 {
+  background: url("ci3.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .carousel .ci4 {
+  background: url("ci4.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+main .carousel .ci5 {
+  background: url("ci5.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+main .carousel .ci6 {
+  background: url("ci6.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
 /*! Footer */
 .footer {
   background-color: silver;
@@ -248,6 +354,48 @@ header .header__button:focus {
   header .header__logo {
     width: 250px;
   }
+  main .business {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main .business .business__images {
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .business .business__images .bp2 {
+    display: none;
+  }
+  main .business .business__info {
+    width: 550px;
+  }
+  main .main__info {
+    width: 530px;
+    font-size: 18px;
+    text-align: center;
+  }
+  main .carousel {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  main .carousel .carousel__images {
+    width: 280px;
+    height: 280px;
+  }
+  main .carousel .ci3, main .carousel .ci4, main .carousel .ci5, main .carousel .ci6 {
+    margin-top: 20px;
+  }
   .footer .footer__top {
     display: -ms-grid;
     display: grid;
@@ -280,6 +428,41 @@ header .header__button:focus {
             transform: translateX(-20px);
     margin-left: 10px;
   }
+  main .business {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main .business .business__images .business__photo {
+    display: none;
+  }
+  main .business .business__info {
+    width: 280px;
+    font-size: 20px;
+  }
+  main .business .business__info .business__title {
+    font-size: 40px;
+  }
+  main .business .business__info .business__text {
+    font-size: 16px;
+  }
+  main .main__info {
+    width: 280px;
+    font-size: 16px;
+  }
+  main .carousel {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  main .carousel .carousel__images {
+    width: 280px;
+    height: 280px;
+  }
+  main .carousel .ci2, main .carousel .ci3, main .carousel .ci4, main .carousel .ci5, main .carousel .ci6 {
+    margin-top: 20px;
+  }
   .footer .footer__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -297,6 +480,9 @@ header .header__button:focus {
   }
   .footer .footer__top .footer__address {
     margin-top: 90px;
+  }
+  .footer .footer__location .footer__map {
+    width: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */
